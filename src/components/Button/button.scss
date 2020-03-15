@@ -1,0 +1,66 @@
+
+@import "../../constants/colours.scss";
+.btn {
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    padding: 0 2em;
+    border-radius: 5px;
+    font-size: 18px;
+    color: $white;
+    margin: 10px;
+    box-shadow: $black-box-shadow;
+    border: none;
+
+  }
+
+.btn:active {
+  outline: none;
+}
+
+.pink {
+  background-color: $pink-color;
+  color: $pink-color;
+
+}
+
+.btn-secondary.pink:hover {
+  background-color: rgb(253, 247, 248);
+  border: none;
+}
+
+.btn-primary.pink:active {
+  background-color: $pink-color-active;
+}
+
+.blue {
+  background-color: $blue-color;
+  color: $blue-color;
+
+}
+
+.btn-secondary.blue:hover {
+  background-color: rgb(247, 250, 253);
+  border: none;
+}
+
+
+.btn-primary.blue:active {
+  background-color: $blue-color-active;
+}
+
+
+.btn-secondary {
+  background-color: inherit;
+  border: none;
+}
+
+.btn-primary {
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+

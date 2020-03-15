@@ -1,0 +1,15 @@
+@import "../../constants/colours.scss";
+
+.menu-item {
+    padding: 6px 16px;
+    list-style: none;
+}
+
+.menu-item:hover {
+    background-color: $light-blue-ripple;
+}
+
+.menu-item-selected {
+    background-color: $blue-color !important;
+    color: $white;
+}

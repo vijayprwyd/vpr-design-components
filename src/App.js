@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+import { Button } from './components/Button/Button';
+import { SelectPlayground } from './playground/SelectPlayground';
 
 function App() {
+
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    
+    <div className="button-container">
+      <Button color = "pink" type = "primary"/>
+      <Button color = "blue" type = "primary" />
+      <Button color = "pink" type = "secondary"/>
+      <Button color = "blue" type = "secondary"/>
     </div>
+
+    <div>
+
+      <SelectPlayground/>
+    </div>
+
+    </>
+
   );
 }
 
