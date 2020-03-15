@@ -32,11 +32,15 @@ export function SelectPlayground() {
             placeHolder = {"value"}
         >
 
+            {/*
+                options.map(option => {
+                   return  <MenuItem value = { option.value } selected = {selected.value === option.value} > {option.text} </MenuItem>  
+                })
+            */}
             <MenuItem value = "10" selected = {selected.value === 10} > Ten </MenuItem>
             <MenuItem  value = "20" selected = {selected.value === 20}> Twenty </MenuItem>
-            <MenuItem  value = "30" disabled selected = {selected.value === 30}> Thirty </MenuItem>
+            <MenuItem  value = "30"  selected = {selected.value === 30}> Thirty </MenuItem>
             <MenuItem value = "40" selected = {selected.value=== 40}> Forty </MenuItem>
-
         </Select>
 
         </div>

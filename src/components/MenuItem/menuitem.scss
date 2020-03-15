@@ -5,7 +5,7 @@
     list-style: none;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:focus {
     background-color: $light-blue-ripple;
 }
 

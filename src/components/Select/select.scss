@@ -9,10 +9,14 @@
     color: $light-black
 }
 
+.select-placeholder {
+    color: $light-black;
+}
 .selected-option {
     border-bottom : 1px solid black;
     padding-bottom: 8px;
     padding-top: 8px;
+    user-select: none;
 }
 
 .select-error {
@@ -42,7 +46,6 @@
 .error-option:hover {
     border-bottom : 1px solid $light-red;;
 }
-
 
 .select-options {
     position: absolute;
