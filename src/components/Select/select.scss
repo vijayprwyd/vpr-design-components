@@ -17,6 +17,8 @@
     padding-bottom: 8px;
     padding-top: 8px;
     user-select: none;
+    height: 37px;
+    box-sizing: border-box;
 }
 
 .select-error {
@@ -36,8 +38,14 @@
 }
 
 .selected-option:hover {
-    border-bottom : 1px solid $blue-color;
+    border-bottom : 2px solid black;
 }
+
+.selected-option:focus {
+    outline: none;
+    border-bottom : 2px solid $blue-color;
+}
+
 
 .error-option {
     border-bottom : 1px solid $light-red;;
@@ -62,4 +70,5 @@
 .select-show{
     display: block;
     opacity: 1;
+    z-index: 1;
 }

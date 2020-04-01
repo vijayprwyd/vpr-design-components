@@ -2,6 +2,10 @@ import React from 'react';
 import "./app.css";
 import { Button } from './components/Button/Button';
 import { SelectPlayground } from './playground/SelectPlayground';
+import { TextFieldPlayground } from './playground/TextFieldPlayground';
+import { RadioButtonPlayground } from './playground/RadioButtonPlayground';
+import { CheckboxPlayground } from './playground/CheckboxPlayground';
+import { SwitchPlayground } from './playground/SwitchPlayground';
 
 function App() {
 
@@ -24,6 +28,10 @@ function App() {
       <SelectPlayground/>
     </div>
 
+      <TextFieldPlayground/>
+      <RadioButtonPlayground/>
+      <CheckboxPlayground/>
+      <SwitchPlayground/>
     </>
 
   );

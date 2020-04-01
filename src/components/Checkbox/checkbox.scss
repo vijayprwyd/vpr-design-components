@@ -1,0 +1,61 @@
+@import "../../constants/colours.scss";
+/* When the checkbox is checked, add a pink background */
+.container input:checked ~ .sec {
+    background-color: rgb(218, 13, 81);
+  }
+
+.container input:checked ~ .pri {
+    background-color: $blue-color;
+}
+
+  
+  /* Create the indicator (the check - hidden when not checked) */
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator checkbox when checked */
+  .container input:checked ~ .checkbox:after {
+    display: block;
+  }
+  
+  /* Style the checkbox */
+  .container .checkbox:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
+  
+  .checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 19px;
+    width: 19px;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 3px;
+  }
+  
+  .container .checkbox:after {
+    left: 5px;
+    top: 0px;
+    height: 11px;
+    width: 5px;  border: solid white;
+    border-width: 0 3px 3px 0;
+    border-radius: 0%;
+  
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+
+  .check-option {
+      display: block;
+      width: fit-content;
+  }
+  

@@ -33,7 +33,7 @@ export function Select({selected, children, placeHolder = "", onChange, error}) 
     }
 
     function handleUlKeyPress(event) {
-        if(event.charCode === 13) {
+        if(event.charCode === 13 || event.charCode === 32) {
             setVisible(false);
             ref.current.focus();
             onChange(event);
@@ -41,6 +41,15 @@ export function Select({selected, children, placeHolder = "", onChange, error}) 
     }
 
     function handleUlKeyDown(event) {
+
+        if(event.keyCode === 9) {
+            hideOptions(event);
+            setVisible(false);
+            setTimeout(() => {
+                document.getElementById("#123").focus();    
+            }, 0);
+        }
+
         if(event.charCode === 13) {
             onChange(event);
         } else if(event.keyCode === 38) {
@@ -50,7 +59,7 @@ export function Select({selected, children, placeHolder = "", onChange, error}) 
         } 
     }
 
-    function xyz(evt) {
+    function handleUlClick(evt) {
         if(evt.target.tagName !== "UL") {
             onChange && onChange(evt);
         }
@@ -58,15 +67,15 @@ export function Select({selected, children, placeHolder = "", onChange, error}) 
 
     return (
 
-        <div className = "select-container">
+        <div  className = "select-container">
 
             <label className = {`select-label ${error ? "select-error" : ""}`} >Age</label>
 
-            <div ref = { ref }  tabIndex="0" onKeyDown = { handleSelectKeyPress }  onClick = { handleClick } className = {selected ? `selected-option ${ error ? "error-option" : ""}` : "selected-option select-placeholder"} > {selected || placeHolder} </div>
+            <div  id= "#123" ref = { ref }  tabIndex="0" onKeyDown = { handleSelectKeyPress }  onClick = { handleClick } className = {selected ? `selected-option ${ error ? "error-option" : ""}` : "selected-option select-placeholder"} > {selected || placeHolder} </div>
  
             { error && <div className = "select-error"> Error </div>}
 
-            <ul ref = {ulRef} onKeyPress = {handleUlKeyPress} onKeyDown = {handleUlKeyDown} tabIndex = "0" onClick = {xyz}  className = {`select-options ${ visible ? "select-show" : ""}`}>
+            <ul ref = {ulRef} onKeyPress = {handleUlKeyPress} onKeyDown = {handleUlKeyDown}  onClick = {handleUlClick}  className = {`select-options ${ visible ? "select-show" : ""}`}>
 
                 {children}
 
