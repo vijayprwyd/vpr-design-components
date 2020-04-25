@@ -12,6 +12,7 @@
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
     "react-transition-group": "^4.3.0",
+    "source-map-explorer": "^2.4.2",
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto": "^0.0.75"
   },
@@ -19,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"

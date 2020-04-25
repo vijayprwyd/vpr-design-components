@@ -6,14 +6,15 @@ import { TextFieldPlayground } from './playground/TextFieldPlayground';
 import { RadioButtonPlayground } from './playground/RadioButtonPlayground';
 import { CheckboxPlayground } from './playground/CheckboxPlayground';
 import { SwitchPlayground } from './playground/SwitchPlayground';
+import { DrawerPlayground } from './playground/DrawerPlayground';
 
 function App() {
 
 
 
 
-
   return (
+
     <>
     
     <div className="button-container">
@@ -32,8 +33,8 @@ function App() {
       <RadioButtonPlayground/>
       <CheckboxPlayground/>
       <SwitchPlayground/>
+      <DrawerPlayground/>
     </>
-
   );
 }
 
