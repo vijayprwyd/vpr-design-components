@@ -1,0 +1,21 @@
+
+@import "../../constants/colours.scss";
+.snackbar {
+    opacity: 1;
+    //transform: none;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, top 3s cubic-bezier(0.4, 0, 0.2, 1) 0ms, bottom 3s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.snack-container {
+    position: fixed;
+    min-width: 288px;
+    padding: 16px;
+    background-color: $mid-black;
+    color: white;
+    //top:100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+   // background-color: none;
+
+}

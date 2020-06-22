@@ -1,12 +1,13 @@
 @import "../../constants/colours.scss";
 
 .menu-item {
-    padding: 6px 16px;
+    padding: 10px 16px;
     list-style: none;
+    margin-bottom: 5px;
 }
 
-.menu-item:hover, .menu-item:focus {
-    background-color: $light-blue-ripple;
+.menu-item:hover {
+    background-color: $dark-gray;
 }
 
 .menu-item-selected {

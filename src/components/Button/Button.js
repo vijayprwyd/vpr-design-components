@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import './button.scss';
 import { createRipple } from "../Ripples/useRipple";
 
-export function Button({color, type}) {
+export function Button({color, type, children, ...props}) {
 
     const domref = useRef(null);
 
@@ -17,9 +17,9 @@ export function Button({color, type}) {
     }
 
     return (
-        <button tabIndex = "0" className={`btn ${color} rippleAnimation ${`btn-${type}`}`} onKeyUp = { handleKeyUp} onMouseUp = {handleKeyUp} >
+        <button {...props} tabIndex = "0" className={ `btn  ${props.className} ${color} rippleAnimation ${`btn-${type}`}`} onKeyUp = { handleKeyUp} onMouseUp = {handleKeyUp} >
 
-            Click Me
+            {children || "Click Me"}
 
             <div className = "rippleDiv"  ref = {domref}></div>
 

@@ -4,14 +4,13 @@
     height: 42px;
     line-height: 42px;
     display: block;
-    padding: 0 2em;
+    padding: 0 20px;
     border-radius: 5px;
     font-size: 18px;
     color: $white;
     margin: 10px;
-    box-shadow: $black-box-shadow;
     border: none;
-
+    box-shadow: $black-box-shadow;
   }
 
 .btn:active {
@@ -59,8 +58,23 @@
   color: white;
 }
 
-/*button:focus {
+.btn-nav {
+  box-shadow: none;
+  color: black;
+  background-color: inherit;
+  border: none;
   outline: none;
+  margin: 0;
+  min-width: 160px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn-nav:focus {
+  background-color: rgba(187, 189, 197, 0.2);
+}
+
+
+/*.btn-nav:focus {
+  outline: 1px solid rgb(13, 84, 194)
 }*/
-
-

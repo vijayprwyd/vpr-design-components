@@ -14,7 +14,7 @@ export function TextFieldPlayground() {
 
         
         >
-        <TextField className = "input-width"/>
+        <TextField labelId = "name" className = "input-width"/>
 
         </div>
     );

@@ -1,0 +1,12 @@
+@import '../../constants/colours.scss';
+.tab-head {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+}
+
+.tab-active {
+    border-bottom: 2px solid $blue-color;
+}

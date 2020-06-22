@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Drawer } from "../components/Drawer/Drawer";
+import { Button } from "../components/Button/Button";
 
 export function DrawerPlayground() {
 
@@ -13,7 +14,7 @@ export function DrawerPlayground() {
     return (
         <>
 
-            <button onClick = {() => setShow(true)}>Close</button>
+            <Button  type = "primary" color = "pink" onClick = {() => setShow(true)}>Show drawer</Button>
             <Drawer position="right" show={show} onClose={hideDrawer}>
 
                 <div style={
@@ -27,6 +28,7 @@ export function DrawerPlayground() {
                     <button tabIndex = "0">cLICK ME</button>
 
                     <button tabIndex = "0">cLICK ME 2</button>
+
 
                 </div>
 
